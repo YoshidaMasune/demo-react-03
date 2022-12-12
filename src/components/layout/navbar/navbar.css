@@ -1,0 +1,23 @@
+nav {
+   /* background-color: hsla(250, 94%, 6%, 0.76); */
+   color: white;
+}
+
+.nav-con {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+   height: 5rem;
+   padding: 0 3rem;
+}
+
+.primary-nav-flex {
+   display: flex;
+   gap: 1rem;
+}
+
+.primary-nav-link>[aria-hidden="true"] {
+   font-weight: 600;
+   margin-inline-end: .75em;
+}

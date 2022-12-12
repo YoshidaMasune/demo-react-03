@@ -1,0 +1,13 @@
+header {
+   background: url("https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 90vh;
+}
+
+.header-brand {
+   text-align: center;
+   margin-top: 10rem;
+   color: white;
+}
