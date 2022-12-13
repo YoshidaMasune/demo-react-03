@@ -1,13 +1,14 @@
 import React from "react";
 import "./header.css";
 import Navbar from "../navbar/Navbar";
+import catblade from "../../../assets/imgs/cat-h.png";
 
 function Header() {
   return (
     <header>
       <Navbar />
       <div className="header-brand">
-        <h1>Header</h1>
+        <section></section>
       </div>
     </header>
   );

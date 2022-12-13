@@ -5,6 +5,7 @@
 }
 
 body {
+  height: 100vh;
   overflow-x: hidden;
 }
 
@@ -15,6 +16,14 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 .flex {

@@ -45,22 +45,18 @@ nav {
       background-color: steelblue;
 
       background-color: hsl(0 0% 100% / .1);
-      backdrop-filter: blur(1.5rem);
+      backdrop-filter: blur(.75rem);
 
       transform: translateX(100%);
-      transition: transform 350ms ease-in;
+      transition: transform 150ms ease-in;
    }
 
    .nav-brand h1 {
       font-size: 1.1em;
    }
 
-   /* .nav-con {
-      padding-inline-start: 0;
-   } */
-
    .primary-nav[data-visible="true"] {
-      transform: translateX(0%);
+      transform: translateX(20%);
    }
 
    .primary-nav[data-visible="true"]~.nav-con {
@@ -76,7 +72,7 @@ nav {
       width: 2rem;
       border: 0;
       top: 1rem;
-      right: 2rem;
+      right: 1rem;
 
       background: url("../../../assets/./menu-icon.svg");
       background-repeat: no-repeat;
