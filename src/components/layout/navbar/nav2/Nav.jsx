@@ -1,22 +1,13 @@
-import React, { useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
-import "./navbar.css";
+import React from "react";
 
-function Navbar({ theme }) {
+function Nav() {
   const primary_nav = useRef();
   const nav_toggle = useRef();
 
-  useEffect(() => {
-    if (theme === "light") {
-      const nav = document.getElementById("nav");
-      nav.classList.add("light-mode");
-    }
-  }, []);
-
   /* 
-    toggle switch for nav bar 
-
-  */
+     toggle switch for nav bar 
+ 
+   */
   const navToggle = function (e) {
     const visibility = primary_nav.current.getAttribute("data-visible");
     if (visibility === "false") {
@@ -29,7 +20,7 @@ function Navbar({ theme }) {
   };
 
   return (
-    <nav id="nav">
+    <nav>
       <div className="nav-con">
         <div className="nav-brand">
           <h1>Cat Wappy</h1>
@@ -74,4 +65,4 @@ function Navbar({ theme }) {
   );
 }
 
-export default Navbar;
+export default Nav;

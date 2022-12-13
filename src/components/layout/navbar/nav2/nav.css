@@ -1,10 +1,5 @@
 nav {
-   color: white;
-}
-
-.light-mode {
    color: black;
-   background-color: hsla(226, 93%, 22%, 0.514);
 }
 
 .nav-con {
@@ -12,8 +7,6 @@ nav {
    align-items: center;
    justify-content: space-between;
 
-   max-width: 75vw;
-   margin: 0 auto;
    height: 4rem;
    padding: 0 1rem;
 }
@@ -41,18 +34,7 @@ nav {
 
 }
 
-@media (min-width:716px) and (max-width: 1024px) {
-   .primary-nav-link>[aria-hidden] {
-      display: none;
-   }
-}
-
 @media (max-width: 45em) {
-
-   .nav-con {
-      max-width: 100%;
-   }
-
    .primary-nav {
       --gap: min(10vh, 2rem);
       position: fixed;
