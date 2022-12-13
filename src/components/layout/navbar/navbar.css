@@ -3,8 +3,8 @@ nav {
 }
 
 .light-mode {
-   color: black;
-   background-color: hsla(226, 93%, 22%, 0.514);
+   /* color: black; */
+   background-color: hsla(207, 36%, 10%, 0.877);
 }
 
 .nav-con {
