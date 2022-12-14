@@ -5,7 +5,11 @@ import "./linkcat.css";
 const displayCats = () => {
   return cats.map((cat, idx) => {
     return (
-      <div key={idx} id={`cat-${idx + 1}`} className="grid-item cat-grid-item">
+      <div
+        key={idx}
+        id={`cat-${idx + 1}`}
+        className="grid-item cat-grid-item slide-item"
+      >
         <figure>
           <img src={cat.img} alt="" />
         </figure>
@@ -16,6 +20,22 @@ const displayCats = () => {
 };
 
 function Linkcats() {
+  const pravSlide = (e) => {
+    let container = document.querySelector(".slide-container");
+    let conWidthD = container.getBoundingClientRect();
+    let conWidth = conWidthD.width;
+
+    container.scrollLeft -= conWidth;
+  };
+
+  const nextSlide = (e) => {
+    let container = document.querySelector(".slide-container");
+    let conWidthD = container.getBoundingClientRect();
+    let conWidth = conWidthD.width;
+
+    container.scrollLeft += conWidth;
+  };
+
   return (
     <div className="container-linkcat">
       <div className="flex-container cats-con-hero">
@@ -25,6 +45,16 @@ function Linkcats() {
           </article>
         </div>
         <div className="grid grid-container-cats">{displayCats()}</div>
+      </div>
+
+      <div className="cat-slide">
+        <button onClick={pravSlide} className="prav-btn">
+          prav
+        </button>
+        <button onClick={nextSlide} className="next-btn">
+          next
+        </button>
+        <div className="slide-container">{displayCats()}</div>
       </div>
     </div>
   );

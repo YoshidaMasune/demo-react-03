@@ -51,3 +51,43 @@
       grid-template-columns: repeat(2, 1fr);
    }
 }
+
+/* 
+   test slide
+*/
+
+.cat-slide {
+   position: relative;
+   overflow: hidden;
+
+}
+
+.cat-slide button {
+   position: absolute;
+   top: 50%;
+   transform: translate(0, -50%);
+}
+
+.next-btn {
+   right: 0;
+}
+
+.slide-container {
+   padding: 20vh 7vw;
+   display: flex;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+}
+
+.slide-container::-webkit-scrollbar {
+   display: none;
+}
+
+.slide-item>img {
+   width: 100%;
+}
+
+.slide-item {
+   max-width: 10em;
+   flex: 0 0 auto;
+}
