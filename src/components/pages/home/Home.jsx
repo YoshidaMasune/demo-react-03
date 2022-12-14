@@ -8,7 +8,6 @@ function Home() {
   return (
     <div>
       <Header />
-
       <section className="box-contents">
         <Linkcats />
       </section>

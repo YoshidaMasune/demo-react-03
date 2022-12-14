@@ -9,6 +9,7 @@ const displayCats = () => {
         key={idx}
         id={`cat-${idx + 1}`}
         className="grid-item cat-grid-item slide-item"
+        data-index={idx}
       >
         <figure>
           <img src={cat.img} alt="" />

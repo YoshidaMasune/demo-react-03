@@ -1,16 +1,27 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
 function Navbar({ theme }) {
   const primary_nav = useRef();
   const nav_toggle = useRef();
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  function handleScroll() {
+    if (window.scrollY > 50) {
+      setIsScrolled(true);
+    } else {
+      setIsScrolled(false);
+    }
+  }
 
   useEffect(() => {
     if (theme === "light") {
       const nav = document.getElementById("nav");
       nav.classList.add("light-mode");
     }
+
+    window.addEventListener("scroll", handleScroll);
   }, []);
 
   /* 
@@ -29,7 +40,7 @@ function Navbar({ theme }) {
   };
 
   return (
-    <nav id="nav">
+    <nav id="nav" className={`navbar ${isScrolled ? "scrolled" : ""}`}>
       <div className="nav-con">
         <div className="nav-brand">
           <h1>Cat Wappy</h1>

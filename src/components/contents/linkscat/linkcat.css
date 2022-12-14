@@ -66,6 +66,7 @@
    position: absolute;
    top: 50%;
    transform: translate(0, -50%);
+   height: 50%;
 }
 
 .next-btn {
@@ -73,8 +74,10 @@
 }
 
 .slide-container {
-   padding: 20vh 7vw;
+   padding: 20vh 1vw;
    display: flex;
+   gap: 6em;
+
    overflow-x: auto;
    scroll-behavior: smooth;
 }
@@ -88,6 +91,11 @@
 }
 
 .slide-item {
-   max-width: 10em;
+   max-width: 23vw;
    flex: 0 0 auto;
+
+}
+
+.slide-item[data-index="0"] {
+   opacity: .3;
 }

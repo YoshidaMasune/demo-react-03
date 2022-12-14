@@ -3,11 +3,11 @@ header {
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
-   height: 60vh;
+   min-height: 60vh;
+   /* position: relative; */
 }
 
 .header-brand {
    text-align: center;
-   margin-top: 10rem;
    color: white;
 }
